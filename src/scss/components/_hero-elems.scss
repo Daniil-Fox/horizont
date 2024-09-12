@@ -1,0 +1,116 @@
+.hero-elems {
+
+  &__left-bottom,
+  &__left-top,
+  &__right-top,
+  &__right-mid,
+  &__right-bottom {
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__left-bottom {
+    width: 370px;
+    height: 370px;
+    bottom: 70px;
+    left: 0;
+
+    @include tablet {
+      height: auto;
+      bottom: -70px;
+      width: 340px;
+      left: -100px;
+    }
+
+    @include mobile {
+      width: 170px;
+      bottom: -30px;
+      left: -30px;
+    }
+  }
+
+  &__left-top {
+    width: 305px;
+    height: 350px;
+    top: 0;
+    left: 0;
+
+    @include small-tablet {
+      transform: rotate(-40deg);
+      top: -100px;
+      left: -40px;
+      width: 250px;
+      height: auto;
+    }
+
+    @include mobile {
+      top: -120px;
+    }
+  }
+
+  &__right-top {
+    width: 270px;
+    height: 200px;
+    right: 0;
+    top: 0;
+
+    @include tablet {
+      width: 230px;
+      height: 170px;
+    }
+
+    @include mobile {
+      right: -10px;
+      width: 194px;
+      top: -32px;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__right-mid {
+    width: 150px;
+    height: 160px;
+    top: 200px;
+    right: 100px;
+
+    @include tablet {
+      right: -30px;
+      height: auto;
+      width: 120px;
+      top: 280px;
+    }
+
+    @include mobile {
+      right: -30px;
+      height: auto;
+      width: 97px;
+      top: 47px;
+    }
+  }
+
+  &__right-bottom {
+    width: 370px;
+    height: 340px;
+    bottom: 35px;
+    right: 0;
+
+    @include tablet {
+      height: auto;
+      bottom: 10px;
+      width: 250px;
+    }
+
+    @include mobile {
+      width: 150px;
+      transform: rotate(20deg);
+      bottom: -10px;
+    }
+  }
+}

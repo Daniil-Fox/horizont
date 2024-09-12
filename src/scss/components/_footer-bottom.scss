@@ -1,0 +1,146 @@
+.footer-bottom {
+  background-color: #373737;
+  border-radius: 40px 40px 0 0;
+  margin-top: -175px;
+  padding-top: 225px;
+  padding-bottom: 45px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    gap: 170px;
+
+    @media (max-width: 1250px) {
+      gap: 60px;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 38px;
+    }
+
+    @include small-tablet {
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include small-tablet {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    max-width: 405px;
+    flex-shrink: 0;
+
+    @include small-tablet {
+      display: none;
+      max-width: 335px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      max-width: 243px;
+    }
+
+    &--mob {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__tel {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+
+    @include small-tablet {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__email {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: right;
+    color: #fff;
+
+    margin-bottom: 35px;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__policy {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #888;
+
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @include small-tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    @include small-tablet {
+      margin-top: auto;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+    &--agree {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+
+      @include small-tablet {
+        display: none;
+      }
+    }
+
+    &--mob-ag {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+      }
+    }
+  }
+}

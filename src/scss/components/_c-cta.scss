@@ -1,0 +1,164 @@
+.c-cta {
+  background-color: var(--accent);
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+
+  @include small-tablet {
+    padding: 60px 30px;
+    padding-bottom: 190px;
+  }
+
+
+  @include mobile {
+    border-radius: 10px;
+    padding: 20px 25px;
+    padding-bottom: 160px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 40px;
+    bottom: 28px;
+    width: 213px;
+    height: 297px;
+    background-image: url('./../img/phone.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    @media (max-width: 1300px) {
+      width: 180px;
+      height: 250px;
+      transform: rotate(-45deg);
+      bottom: -10px;
+    }
+
+    @include small-tablet {
+      width: 130px;
+      height: 230px;
+      bottom: -20px;
+      left: 70px;
+    }
+
+    @include mobile {
+      width: 120px;
+      height: 200px;
+      left: 10px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 326px;
+    height: 100%;
+    background-image: url('./../img/girl.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    @media (max-width: 1300px) {
+      width: 230px;
+    }
+
+    @include small-tablet {
+      right: 30px;
+      width: 200px;
+    }
+
+    @include mobile {
+      right: 20px;
+      width: 170px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__title,
+  &__desc {
+    color: var(--white);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 25px;
+
+    @media (max-width: 1300px) {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    @include mobile {
+      gap: 10px;
+    }
+  }
+
+  &__form {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @media (max-width: 1300px) {
+      max-width: 480px;
+      flex-wrap: wrap;
+
+      .cta-form__label {
+        width: 45%;
+      }
+
+      .cta-form__btn {
+        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+    }
+
+    @include small-tablet {
+      .cta-form__btn {
+        width: 49%;
+        flex: unset;
+      }
+    }
+
+    @include mobile {
+      .cta-form__label {
+        width: 100%;
+      }
+
+      .cta-form__btn {
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__agree {
+    text-align: center;
+    color: var(--white);
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

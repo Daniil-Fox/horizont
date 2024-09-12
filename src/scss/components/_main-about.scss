@@ -1,0 +1,198 @@
+.main-about {
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__container {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 52px 30px;
+    overflow: hidden;
+
+    @include small-tablet {
+      border-radius: 20px;
+      padding: 25px 20px;
+    }
+
+    @include mobile {
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    @include small-tablet {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+
+    @include mobile {
+      max-width: 100%;
+      max-height: 85px;
+      padding-right: 15px;
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d9d9d9;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #d0d0d0;
+      width: 6px;
+      border-radius: 10px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 35px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 405px;
+    height: 65px;
+    margin-bottom: 45px;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    &--mob {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+        margin-bottom: 32px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 770px;
+    flex: 1;
+  }
+
+  &__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include small-tablet {
+      flex-direction: row;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}
+
+
+.ab-item {
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: 1;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+
+  @include small-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    height: auto;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 185px;
+
+    flex: 1;
+
+    @include mobile {
+      font-size: 20px;
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    color: #888;
+
+    @include tablet {
+      flex: 2;
+      width: 100%;
+      max-width: 210px;
+    }
+
+    @include small-tablet {
+      flex: 1;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+
+  }
+}

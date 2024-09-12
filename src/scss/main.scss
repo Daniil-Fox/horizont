@@ -1,0 +1,33 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/cart";
+@import "./components/hero";
+@import "./components/hero-elems";
+@import "./components/instrument";
+@import "./components/inst-item";
+@import "./components/month-prod";
+@import "./components/main-catalog";
+@import "./components/selection";
+@import "./components/video";
+@import "./components/main-about";
+@import "./components/popular";
+@import "./components/pay";
+@import "./components/faq";
+@import "./components/cta";
+@import "./components/cta-form";
+@import "./components/footer";
+@import "./components/footer-bottom";
+@import "./components/footer-nav";
+@import "./components/popup-cons";
+@import "./components/search";
+@import "./components/breadcrumbs";
+@import "./components/contacts";
+@import "./components/c-cta";
+@import "./components/prod-hero";

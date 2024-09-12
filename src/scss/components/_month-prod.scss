@@ -1,0 +1,198 @@
+.month-prod {
+  margin-bottom: 90px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    gap: 25px;
+
+    @include tablet {
+      grid-template-columns: repeat(14, 1fr);
+      gap: 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(11, 1fr);
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__header {
+    order: -1;
+    grid-column: 9 span;
+    grid-row: 2 span;
+    background-color: var(--white);
+    padding: 30px 44px;
+    border-radius: 20px;
+
+    @include tablet {
+      grid-column: 8 span;
+      grid-row: unset;
+    }
+
+    @include small-tablet {
+      grid-column: 11 span;
+    }
+
+    @include mobile {
+      border-radius: 10px;
+      padding: 15px;
+    }
+  }
+
+  &__items {
+    grid-column: 9 span;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    @include tablet {
+      grid-template-columns: repeat(14, 1fr);
+      gap: 20px;
+      grid-column: 14 span;
+    }
+
+    @include small-tablet {
+      grid-column: 6 span;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    order: -1;
+    grid-column: 8 span;
+    grid-row: 3 span;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('./../img/month-prod/back.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @include tablet {
+      grid-row: unset;
+      grid-column: 6 span;
+    }
+
+    @include small-tablet {
+      grid-column: 5 span;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__theme {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__cost {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    padding-right: 20px;
+
+    @include tablet {
+      grid-column: 8 span;
+    }
+
+    @include small-tablet {
+      grid-column: 1 span;
+      flex: 1;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 30px;
+    padding-right: 45px;
+    background-color: var(--accent);
+    border-radius: 20px;
+
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include small-tablet {
+      grid-column: 1 span;
+      font-size: 30px;
+      flex: 1;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+
+
+    @include hover {
+      .month-prod__link-icon {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__link-icon {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    width: 22px;
+    height: 22px;
+    transition: transform .3s ease-out;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include mobile {
+      position: static;
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--dark);
+  }
+}

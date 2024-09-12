@@ -1,0 +1,41 @@
+.instrument {
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__theme {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    max-width: 740px;
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 20px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+.instrument-cat {
+  &__title {
+    margin-bottom: 25px;
+  }
+}

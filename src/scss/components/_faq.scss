@@ -1,0 +1,116 @@
+.faq {
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__theme {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__container {
+    border-radius: 40px;
+    background-color: #fff;
+    padding: 30px;
+
+    @include small-tablet {
+      border-radius: 20px;
+    }
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.faq-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d1d1d1;
+
+  @include mobile {
+    padding-bottom: 15px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__quest {
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__more {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    background-image: url('./../img/plus.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include small-tablet {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include mobile {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__body {
+    box-sizing: content-box;
+    will-change: max-height;
+    transition: max-height .3s ease-out;
+
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding-top: 27px;
+    color: #888;
+
+    @include small-tablet {
+      padding-top: 20px;
+    }
+
+    @include mobile {
+      padding-top: 15px;
+    }
+  }
+
+  &.active {
+    .faq-item__more {
+      background-image: url('./../img/minus.svg');
+    }
+  }
+}

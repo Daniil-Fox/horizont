@@ -1,0 +1,295 @@
+.selection {
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 120px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    max-width: 1080px;
+    margin-bottom: 30px;
+    font-size: 50px;
+
+    @include small-tablet {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 25px;
+    }
+
+    span {
+      display: inline-block;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      color: var(--accent);
+
+      @include tablet {
+        border: none;
+        display: inline;
+        border: none;
+      }
+    }
+  }
+
+  &__row {
+    @include small-tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__desc {
+    max-width: 770px;
+    position: relative;
+
+    @include tablet {
+      max-width: 500px;
+    }
+
+    @include small-tablet {
+      max-width: 50%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      max-height: 85px;
+      padding-right: 15px;
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d9d9d9;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #d0d0d0;
+      width: 6px;
+      border-radius: 10px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: 360px;
+
+    @include tablet {
+      height: 285px;
+      top: unset;
+      bottom: 0;
+    }
+
+    @include small-tablet {
+      position: static;
+      max-width: 45%;
+      height: auto;
+    }
+
+    @include mobile {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
+
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__g {
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 865px;
+    position: relative;
+
+    @include tablet {
+      height: 720px;
+    }
+
+    @include mobile {
+      border-radius: 10px;
+    }
+
+    &:nth-child(odd) {
+      grid-column: 3 span;
+
+      background-image: url('./../img/selection/back1.webp');
+
+      @include small-tablet {
+        height: 300px;
+      }
+    }
+
+    &:nth-child(even) {
+      grid-column: 5 span;
+
+      background-image: url('./../img/selection/back2.webp');
+
+      @include small-tablet {
+        height: 465px;
+      }
+
+      @include mobile {
+        height: 310px;
+      }
+    }
+  }
+}
+
+
+.selection__g:nth-child(odd) {
+  .selection__item {
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-child(1) {
+      width: 238px;
+      left: 0;
+      bottom: 0;
+
+      @include small-tablet {
+        width: 200px;
+      }
+
+      @include mobile {
+        width: 150px;
+        bottom: 60px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 400px;
+      top: 0;
+      right: 0;
+
+      @include small-tablet {
+        width: 440px;
+        top: unset;
+        bottom: -50%;
+        transform: rotate(-13deg);
+      }
+
+      @include mobile {
+        width: 365px;
+        bottom: -40%;
+        right: -10%;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 350px;
+      top: 0;
+      left: 0;
+
+      @include small-tablet {
+        width: 300px;
+        left: 50%;
+        top: -10%;
+        transform: translateX(-50%);
+      }
+
+      @include mobile {
+        width: 240px;
+        top: 5%;
+        transform: translateX(-50%) rotate(13deg);
+      }
+    }
+  }
+}
+
+.selection__g:nth-child(even) {
+  .selection__item {
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-child(1) {
+      width: 690px;
+      left: 0;
+      bottom: 0;
+
+      @include small-tablet {
+        width: 400px;
+      }
+
+      @include mobile {
+        width: 250px;
+        transform: rotate(-10deg);
+      }
+    }
+
+    &:nth-child(2) {
+      width: 390px;
+      top: 0;
+      right: 0;
+
+      @include small-tablet {
+        width: 300px;
+      }
+
+      @include mobile {
+        width: 170px;
+        transform: rotate(10deg);
+      }
+    }
+
+    &:nth-child(3) {
+      width: 360px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include small-tablet {
+        width: 240px;
+        top: -10%;
+      }
+
+      @include mobile {
+        width: 170px;
+        left: 40%;
+      }
+    }
+  }
+}

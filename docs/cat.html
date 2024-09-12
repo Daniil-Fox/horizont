@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>MaxGraph New Site</title>
+  <link
+    rel="preload"
+    href="fonts/SF-Pro-Display-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/SF-Pro-Display-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/SF-Pro-Display-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/SF-Pro-Display-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/SF-Pro-Display-Semibold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Lato-Black.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Lato-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="./" class="header__logo">
+        <img src="./img/logo.svg" alt="" />
+      </a>
+
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__item nav__item--prom">
+            <a href="#" class="nav__link">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сервис и поддержка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a href="tel:+78124265470" class="header__tel">+7 (812) 426-54-70</a>
+        <button class="btn-reset header__btn btn" data-popup-btn="cons">
+          Проконсультироваться
+        </button>
+        <a href="#" class="header__cart cart">
+          <img src="./img/cart-icon.svg" alt="" />
+
+          <div class="cart__count">15</div>
+        </a>
+
+        <div class="header__burger">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="instrument instrument-cat">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="./">Главная</a>
+        </li>
+        <li>
+          <span>Каталог</span>
+        </li>
+      </ul>
+    </div>
+    <h1 class="instrument-cat__title title1">Каталог продукции</h1>
+    <form action="#" class="search instrument-cat__search">
+      <input
+        type="text"
+        class="search__input"
+        placeholder="Поиск по каталогу"
+      />
+      <button class="btn-reset search__btn">
+        <img src="./img/search.svg" alt="" />
+      </button>
+    </form>
+    <div class="instrument__items">
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">
+          Инструмент для<br />укладки бетона
+        </div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/01.webp" alt="Инструмент для укладки бетона" />
+        </div>
+      </a>
+
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">Гладилки по бетону</div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/02.webp" alt="Гладилки по бетону" />
+        </div>
+      </a>
+
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">
+          Правила и скребковый инструмент
+        </div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/03.webp" alt="Правила и скребковый инструмент" />
+        </div>
+      </a>
+
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">
+          Желоба для подачи на расстояние
+        </div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/04.webp" alt="Желоба для подачи на расстояние" />
+        </div>
+      </a>
+
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">Инструмент для брашивания</div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/05.webp" alt="Инструмент для брашивания " />
+        </div>
+      </a>
+
+      <a href="#" class="instrument__item inst-item">
+        <div class="inst-item__title subtitle1">Рукояти и адаптеры</div>
+        <span class="inst-item__link">
+          <span class="inst-item__icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.0351 1.99614C14.0351 1.30578 13.4755 0.746137 12.7851 0.746136L1.53511 0.746137C0.844757 0.746137 0.285113 1.30578 0.285113 1.99614C0.285113 2.68649 0.844757 3.24614 1.53511 3.24614H11.5351V13.2461C11.5351 13.9365 12.0948 14.4961 12.7851 14.4961C13.4755 14.4961 14.0351 13.9365 14.0351 13.2461L14.0351 1.99614ZM1.88388 14.6651L13.669 2.88002L11.9012 1.11225L0.116116 12.8974L1.88388 14.6651Z"
+                fill="#373737"
+              />
+            </svg>
+          </span>
+
+          <span class="inst-item__t">Смотреть каталог</span>
+        </span>
+
+        <div class="inst-item__img">
+          <img src="./img/inst/06.webp" alt="Рукояти и адаптеры" />
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="popular">
+  <div class="container">
+    <div class="popular__theme title3 title3--accent">Бестселлеры</div>
+
+    <div class="popular__header">
+      <h2 class="title2 popular__title">
+        Самые популярные товары среди наших покупателей
+      </h2>
+
+      <div class="popular__control control">
+        <div class="control__btn control__btn--prev popular-prev">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="control__btn control__btn--next popular-next">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular__slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/01.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Гладилка канальная (стартовая) 1200 Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular__pagination pagination"></div>
+
+    <a href="#" class="popular__link btn btn--dark">Перейти в каталог</a>
+  </div>
+</section>
+
+        <section class="popular popular-partner">
+  <div class="container">
+    <div class="popular__theme title3 title3--accent">Продукция партнеров</div>
+
+    <div class="popular__header">
+      <h2 class="title2 popular__title">
+        Мы сотрудничаем с другими надежными производителями
+      </h2>
+
+      <div class="popular__control control">
+        <div class="control__btn control__btn--prev popular-prev">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="control__btn control__btn--next popular-next">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular__slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide popular__item popular-item">
+          <div class="popular-item__img">
+            <img src="./img/popular/02.webp" alt="" />
+          </div>
+          <div class="popular-item__content">
+            <div class="popular-item__name">
+              Скребок выравнивающий (для бетона) 190 мм Серия Профи
+            </div>
+            <div class="popular-item__price">4600 ₽</div>
+            <button class="btn-reset btn popular-item__btn">
+              Добавить в корзину
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular__pagination pagination"></div>
+
+    <a href="#" class="popular__link btn btn--dark">Перейти в каталог</a>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <section class="footer__top cta">
+    <div class="container">
+      <div class="cta__container">
+        <div class="cta__left">
+          <div class="cta__block">
+            <div class="btn cta__capture">Приезжайте</div>
+            <span class="cta__inf"
+              >Санкт-Петербург, Петергоф, Ропшинское шоссе, 8Д</span
+            >
+          </div>
+          <div class="cta__block">
+            <div class="btn cta__capture">Звоните</div>
+            <a href="tel:+78124265470" class="cta__inf">+7 (812) 426-54-70</a>
+          </div>
+          <div class="cta__block">
+            <div class="btn cta__capture">Пишите</div>
+            <a href="mailto:info@gorizont.instrument.ru" class="cta__inf"
+              >info@gorizont.instrument.ru</a
+            >
+          </div>
+        </div>
+        <div class="cta__right">
+          <div class="title3 title3--accent cta__theme">Контакты</div>
+          <h2 class="title2 cta__title">Остались вопросы?</h2>
+          <p class="text cta__desc">Оставьте заявку, и мы свяжемся с вами!</p>
+
+          <form action="#" class="cta-form cta__form">
+            <label class="cta-form__label">
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                class="input-reset cta-form__input input-name"
+              />
+            </label>
+            <label class="cta-form__label">
+              <input
+                type="tel"
+                placeholder="Телефон"
+                class="input-reset cta-form__input input-tel"
+              />
+            </label>
+            <button class="cta-form__btn btn-reset btn btn--orange">
+              Задать вопрос
+            </button>
+          </form>
+          <span class="cta__agree">
+            Отправляя заявку, вы соглашаетесь с
+            <a href="#">Политикой конфиденциальности</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer__bottom footer-bottom">
+    <div class="container">
+      <a href="#" class="footer-bottom__logo footer-bottom__logo--mob">
+        <img src="./img/logo-white.svg" alt="" />
+      </a>
+      <div class="footer__container">
+        <div class="footer-bottom__left">
+          <a href="#" class="footer-bottom__logo">
+            <img src="./img/logo-white.svg" alt="" />
+          </a>
+
+          <nav class="footer-nav footer-bottom__nav">
+            <ul class="list-reset footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Главная</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Каталог</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Акции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Сервис и поддержка</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="#"
+            class="footer-bottom__policy footer-bottom__policy--agree footer-bottom__policy--mob-ag"
+            >Пользовательское соглашение</a
+          >
+        </div>
+
+        <div class="footer-bottom__right">
+          <a href="tel:+78124265470" class="footer-bottom__tel"
+            >+7 (812) 426-54-70</a
+          >
+          <a
+            href="mailto:info@gorizont.instrument.ru"
+            class="footer-bottom__email"
+            >info@gorizont.instrument.ru</a
+          >
+
+          <a href="#" class="footer-bottom__policy"
+            >Политика конфиденциальности</a
+          >
+          <a href="#" class="footer-bottom__policy footer-bottom__policy--agree"
+            >Пользовательское соглашение</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

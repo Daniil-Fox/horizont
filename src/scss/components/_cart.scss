@@ -1,0 +1,32 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    border-radius: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: var(--accent);
+    color: var(--white);
+    width: 23px;
+    height: 23px;
+
+    @include mobile {
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+}
