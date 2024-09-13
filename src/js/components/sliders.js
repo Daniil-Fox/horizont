@@ -75,3 +75,12 @@ const prodSlider = new Swiper('.prod-hero__slider', {
     swiper: prodThumbs
   }
 })
+
+
+new Swiper('.lic-slider', {
+  slidesPerView: 4,
+  spaceBetween: 25,
+  pagination: {
+    el: '.lic-pagination'
+  }
+})

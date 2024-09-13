@@ -1,0 +1,33 @@
+.prod-cost {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #373737;
+
+    &--accent {
+      color: #ff7a00;
+    }
+  }
+
+  &__capture {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #000;
+  }
+
+  &__desc {
+    max-width: 80%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #888;
+  }
+}
