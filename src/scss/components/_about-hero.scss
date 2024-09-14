@@ -1,0 +1,75 @@
+.about-hero {
+  margin-bottom: 85px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &--bottom {
+      grid-template-columns: repeat(14, 1fr);
+      gap: 25px;
+    }
+  }
+
+  &__text {
+    grid-column: 9 span;
+  }
+
+  &__img {
+    grid-column: 9 span;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 450px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--long {
+      height: 100%;
+      grid-column: 7 span;
+      grid-row: 2 span;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__left {
+    flex-shrink: 0;
+    grid-column: 5 span;
+  }
+
+  &__right {
+    grid-column: 9 span;
+  }
+
+  &__logo {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .ab-item {
+    gap: 35px;
+    justify-content: space-between;
+    background-color: #fff;
+    overflow: unset;
+    width: 230px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+}

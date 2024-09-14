@@ -220,7 +220,12 @@ popularSliders.forEach(slider => {
 });
 const prodThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.prod-hero__thumbs', {
   slidesPerView: 7,
-  spaceBetween: 15
+  spaceBetween: 15,
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto'
+    }
+  }
 });
 const prodSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.prod-hero__slider', {
   slidesPerView: 1,
@@ -234,6 +239,17 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.lic-slider', {
   spaceBetween: 25,
   pagination: {
     el: '.lic-pagination'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    568: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4
+    }
   }
 });
 

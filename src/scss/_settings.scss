@@ -108,6 +108,10 @@ a {
   font-size: 60px;
   color: #373737;
 
+  @include tablet {
+    font-size: 45px;
+  }
+
   @include small-tablet {
     font-size: 43px;
   }

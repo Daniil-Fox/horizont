@@ -9,16 +9,26 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 25px;
+
+
   }
 
   &__left {
     grid-column: 7 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__content {
     grid-column: 5 span;
     display: flex;
     flex-direction: column;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__about,
@@ -30,25 +40,80 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+
+    @include small-tablet {
+      padding: 20px;
+      border-radius: 10px;
+    }
   }
 
   &__vari {
     flex-grow: 1;
+
+    @include tablet {
+      flex-grow: unset;
+    }
+
+    @include small-tablet {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__items {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     overflow-x: auto;
+
+
+
+    @media (max-width: 1440px) {
+      gap: 20px;
+    }
   }
 
   &__compl {
+
     margin-bottom: 25px;
+
+    @media (max-width: 1440px) {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    @include small-tablet {
+      font-size: 25px;
+      max-width: 175px;
+      text-align: left;
+      margin: 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 25px;
+      text-align: center;
+    }
   }
 
   &__slider {
     height: 600px;
     margin-bottom: 15px;
+
+    @include small-tablet {
+      height: 500px;
+
+    }
+
+    @include mobile {
+      height: 280px;
+    }
 
     .swiper-slide {
       box-sizing: border-box;
@@ -56,6 +121,10 @@
       background-color: #fff;
       border-radius: 30px;
       overflow: hidden;
+
+      @include small-tablet {
+        border-radius: 10px;
+      }
 
       img {
         width: 100%;
@@ -111,12 +180,52 @@
   align-items: flex-start;
   gap: 40px;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @include small-tablet {
+    margin-top: 70px;
+  }
+
+
+
+  &__btn {
+    @include small-tablet {
+      position: absolute;
+      bottom: calc(100% + 20px);
+      height: 50px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__left {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+    }
+  }
 
   &__cost {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 40px;
     color: #373737;
+
+    @media (max-width: 1440px) {
+      font-size: 30px;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__price {
@@ -124,10 +233,25 @@
     font-weight: 600;
     font-size: 50px;
     color: #ff7a00;
+    flex-shrink: 0;
+
+    @media (max-width: 1440px) {
+      font-size: 40px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 }
 
 .prod-var {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 15px;
+
   padding: 10px 7px;
   padding-top: 0;
   width: 170px;
@@ -136,10 +260,32 @@
   border-radius: 20px;
   background-color: #fff;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
+
+
+
+  @include tablet {
+    padding: 10px;
+    padding-top: 0;
+    width: auto;
+    align-items: center;
+    flex: 1;
+    height: 230px;
+    justify-content: flex-end;
+  }
+
+  @include small-tablet {
+    height: 60px;
+    height: 60px;
+    padding: 5px;
+    padding-top: 0;
+    border-radius: 10px;
+  }
+
+  @include mobile {
+    flex: unset;
+    width: 60px;
+    height: 60px;
+  }
 
   &__img {
     flex-grow: 1;
@@ -149,17 +295,33 @@
     align-items: center;
     justify-content: center;
 
+    @include tablet {
+      height: 100%;
+      margin: 0;
+      flex: unset;
+      display: block;
+    }
+
     img {
       width: 100%;
       height: auto;
       max-height: 100%;
       object-fit: contain;
+
+      @include tablet {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
   &__info {
     margin-top: auto;
     text-align: center;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__name {

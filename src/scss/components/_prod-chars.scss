@@ -6,7 +6,18 @@
     align-items: center;
     gap: 30px;
 
+
     margin-bottom: 25px;
+    padding: 0 15px;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+
+    @include mobile {
+      overflow: auto;
+      margin-bottom: 10px;
+      padding: 0 20px;
+    }
   }
 
   &__tab {
@@ -14,6 +25,25 @@
     position: relative;
     cursor: pointer;
     transition: color .3s ease-out;
+    font-size: 36px;
+
+
+    @media (max-width: 1440px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 980px) {
+      font-size: 18px;
+      text-align: center;
+      flex: 1;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      text-align: left;
+      white-space: nowrap;
+      padding: 10px 0px;
+    }
 
     &::after {
       content: "";
@@ -21,12 +51,20 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: calc(100% + 20px);
-      height: calc(100% + 4px);
+      width: calc(100% + 30px);
+      height: calc(100% + 20px);
       border: 1px solid #373737;
       border-radius: 10px;
       opacity: 0;
       transition: opacity .3s ease-out;
+
+      @include small-tablet {
+        height: 50px;
+      }
+
+      @include mobile {
+        height: 30px;
+      }
     }
 
     &.active {
@@ -58,6 +96,11 @@
     overflow: hidden;
     cursor: zoom-in;
 
+    @include small-tablet {
+      height: 280px;
+      border-radius: 10px;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -68,6 +111,183 @@
 .prod-content {
   &__has {
     min-height: 267px;
+
+    @include small-tablet {
+      min-height: unset;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+
+
+
+    &--more {
+      @include tablet {
+        display: block;
+
+        .prod-content__left {
+          margin-bottom: 30px;
+        }
+
+        .prod-content__right {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+
+        .prod-content__body {
+          &:not(:last-child) {
+            margin: 0;
+          }
+        }
+
+        .prod-content__has {
+          grid-column: 2 span;
+          min-height: unset;
+          order: 0;
+        }
+
+        .prod-cost {
+          order: 1;
+        }
+
+        .prod-pay {
+          grid-row: 2 span;
+          order: 2;
+          padding-right: 120px;
+
+          &__title {
+            margin-bottom: 45px;
+          }
+
+          &__items {
+            flex-wrap: wrap;
+          }
+        }
+
+        .prod-content__link {
+          order: 4;
+
+          &:not(:last-child) {
+            margin: 0;
+          }
+        }
+      }
+
+      @include small-tablet {
+        .prod-content__right {
+          grid-template-columns: repeat(13, 1fr);
+          gap: 20px;
+        }
+
+        .prod-content__link {
+          grid-column: 7 span;
+          height: 100%;
+
+          .prod-content__btn {
+            height: 100%;
+          }
+        }
+
+        .prod-cost {
+          grid-column: 6 span;
+          order: -1;
+          padding: 15px;
+
+          &__header {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+          }
+
+          &__title {
+            font-size: 25px;
+          }
+        }
+
+        .prod-pay {
+          grid-column: 13 span;
+          grid-row: unset;
+          order: 5;
+
+          &__title {
+            margin-bottom: 30px;
+          }
+        }
+
+        .prod-content__has {
+          grid-column: 13 span;
+          order: -1;
+        }
+      }
+
+      @include mobile {
+        .prod-cost {
+          grid-column: 13 span;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          &__title:not(.prod-cost__title--accent) {
+            display: none;
+          }
+        }
+
+        .prod-content__link {
+          grid-column: 13 span;
+
+          .prod-content__btn {
+            padding: 13px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      gap: 30px;
+    }
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 15px;
+
+    }
+  }
+
+
+  &__desc {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__chars {
@@ -103,9 +323,23 @@
 
   &__left {
     grid-column: 7 span;
+
+    @include tablet {
+      grid-column: 8 span;
+    }
+
+    @include small-tablet {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+
     &>li {
       span {
         color: #ff7a00;
@@ -116,19 +350,26 @@
 
   &__right {
     grid-column: 5 span;
+
+    @include tablet {
+      grid-column: 4 span;
+    }
   }
 
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 25px;
 
-  }
 
   &__body {
     background-color: #fff;
     border-radius: 20px;
     padding: 30px;
+
+    @include tablet {
+      height: 100%;
+    }
+
+    @include small-tablet {
+      padding: 25px 20px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -138,16 +379,6 @@
   &__link {
     &:not(:last-child) {
       margin-bottom: 25px;
-    }
-  }
-
-  &__title {
-    margin-bottom: 30px;
-  }
-
-  &__desc {
-    &:not(:last-child) {
-      margin-bottom: 50px;
     }
   }
 
@@ -161,8 +392,15 @@
     justify-content: space-between;
     align-items: center;
 
+    @include small-tablet {
+      align-items: flex-start;
+      height: 100%;
+      padding: 34px 25px;
+    }
+
     svg {
       position: static;
+      flex-shrink: 0;
     }
   }
 
@@ -175,6 +413,11 @@
   height: 100%;
   border-radius: 30px;
   overflow: auto;
+
+  @include tablet {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 
   video {
     position: absolute;
