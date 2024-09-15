@@ -13,6 +13,11 @@
     &--bottom {
       grid-template-columns: repeat(14, 1fr);
       gap: 25px;
+
+      @include tablet {
+        grid-template-columns: repeat(11, 1fr);
+        gap: 55px;
+      }
     }
   }
 
@@ -41,19 +46,31 @@
   &__items {
     display: flex;
     gap: 20px;
+
+    @include tablet {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
   }
 
   &__left {
     flex-shrink: 0;
     grid-column: 5 span;
+
+
   }
 
   &__right {
     grid-column: 9 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
   }
 
   &__logo {
     width: 100%;
+    margin-bottom: 30px;
 
     img {
       width: 100%;
@@ -67,9 +84,15 @@
     justify-content: space-between;
     background-color: #fff;
     overflow: unset;
-    width: 230px;
+    flex: 1;
     height: auto;
     padding-left: 15px;
     padding-right: 10px;
+
+    @include tablet {
+      width: 100%;
+      gap: 55px;
+      justify-content: space-between;
+    }
   }
 }

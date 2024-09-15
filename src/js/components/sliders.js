@@ -100,3 +100,18 @@ new Swiper('.lic-slider', {
     },
   }
 })
+
+
+new Swiper('.about-slider__slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.about-slider__pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.about-slider-prev',
+    nextEl: '.about-slider-next',
+  }
+})

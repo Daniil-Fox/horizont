@@ -1,0 +1,109 @@
+.about-video {
+  margin-bottom: 80px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 20px;
+
+    @include tablet {
+      grid-template-columns: repeat(11, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__video {
+    grid-column: 8 span;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include tablet {
+      grid-column: 11 span;
+    }
+  }
+
+  &__right {
+    grid-column: 6 span;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      gap: 30px;
+      grid-column: 11 span;
+    }
+  }
+
+  &__item {
+    flex-grow: 1;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+
+    background-image: url('./../img/about-video/inst.webp');
+    background-size: 350px auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @include tablet {
+      grid-column: 8 span;
+      background-size: 300px auto;
+    }
+  }
+
+  &__cons {
+    background: #ff7a00;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 25px;
+    height: 150px;
+    font-size: 35px;
+
+    svg {
+      position: static;
+    }
+
+    @include tablet {
+      grid-column: 5 span;
+      height: 100%;
+    }
+  }
+
+  &__capture {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #373737;
+  }
+
+  &__desc {
+    max-width: 330px;
+    margin-bottom: 50px;
+  }
+}
