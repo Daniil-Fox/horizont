@@ -113,5 +113,13 @@ new Swiper('.about-slider__slider', {
   navigation: {
     prevEl: '.about-slider-prev',
     nextEl: '.about-slider-next',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    577: {
+      slidesPerView: 2
+    }
   }
 })

@@ -1,6 +1,10 @@
 .about-slider {
   margin-bottom: 80px;
 
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
   &__slider {
     margin-bottom: 30px;
 
@@ -12,6 +16,15 @@
 
       @include tablet {
         height: 360px;
+      }
+
+      @include small-tablet {
+        height: 250px;
+      }
+
+      @include mobile {
+        height: 200px;
+        border-radius: 10px;
       }
 
       img {
@@ -35,6 +48,10 @@
     transition: background-color .3s ease-out;
     background-color: #fff;
     cursor: pointer;
+
+    @include small-tablet {
+      display: none;
+    }
 
     svg {
       width: 30px;
