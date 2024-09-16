@@ -1,0 +1,80 @@
+.stock-hero {
+  margin-bottom: 80px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    background-color: #ff7a00;
+    color: #fff;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--dark {
+      background-color: #e1e0de;
+      color: #373737;
+    }
+  }
+}
+
+.sh-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  border-radius: 40px;
+  overflow: hidden;
+
+  &__left {
+    padding: 47px 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+  &__desc {
+    margin-bottom: 50px;
+    color: inherit;
+  }
+
+  &__btn {
+    border-color: inherit;
+    color: inherit;
+    width: 285px;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 700px;
+
+    position: relative;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: -30px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      mask-image: url('./../img/mask.svg');
+      mask-size: auto 100%;
+    }
+
+    img {
+      mask-image: url('./../img/mask-img.webp');
+      mask-size: auto 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
