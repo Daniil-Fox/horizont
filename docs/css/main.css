@@ -5908,9 +5908,9 @@ a {
   border-radius: 10px;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-  -webkit-transform: translateY(-120%);
-  -ms-transform: translateY(-120%);
-  transform: translateY(-120%);
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
 }
 .menu.active {
   -webkit-transform: translateY(0);
