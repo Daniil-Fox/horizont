@@ -27,20 +27,64 @@
   border-radius: 40px;
   overflow: hidden;
 
+  @include tablet {
+    gap: 0;
+
+  }
+
+  @include small-tablet {
+    border-radius: 20px;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+
   &__left {
     padding: 47px 30px;
+
+    @include small-tablet {
+      padding: 35px 25px;
+      padding-right: 0;
+      max-width: 65%;
+
+    }
+
+    @include mobile {
+      max-width: 100%;
+      padding: 20px;
+
+    }
   }
 
   &__title {
     margin: 0;
     margin-bottom: 20px;
+    margin-right: -50px;
     font-weight: 600;
     font-size: 45px;
+
+    @include small-tablet {
+      margin-right: 0;
+      font-size: 35px;
+    }
   }
 
   &__desc {
     margin-bottom: 50px;
     color: inherit;
+    max-width: 475px;
+
+    @include small-tablet {
+      max-width: 80%;
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      max-width: 75%;
+      margin-bottom: 10px;
+    }
   }
 
   &__btn {
@@ -48,14 +92,37 @@
     color: inherit;
     width: 285px;
     justify-content: center;
+
+    @include mobile {
+      width: auto;
+      text-transform: capitalize;
+
+      span {
+        display: none;
+      }
+    }
   }
 
   &__img {
     width: 100%;
-    max-width: 700px;
+    max-width: 40%;
 
     position: relative;
     z-index: 2;
+
+    @include tablet {
+      margin-left: -50px;
+    }
+
+    @include small-tablet {
+      margin-left: 0px;
+      max-width: 60%;
+    }
+
+    @include mobile {
+      margin-left: auto;
+      margin-top: -20%;
+    }
 
     &::after {
       content: "";
@@ -63,11 +130,22 @@
       z-index: -1;
       left: -30px;
       top: 0;
-      width: 100%;
+      width: 200%;
       height: 100%;
       background-color: #fff;
       mask-image: url('./../img/mask.svg');
       mask-size: auto 100%;
+      mask-repeat: no-repeat;
+
+      @include small-tablet {
+        left: -15px;
+      }
+
+      @include mobile {
+        top: -15px;
+        bottom: -15px;
+        height: auto;
+      }
     }
 
     img {

@@ -41,5 +41,10 @@
     font-weight: 600;
     font-size: 16px;
     color: var(--dark);
+    transition: .3s ease-out;
+
+    @include hover {
+      color: var(--accent);
+    }
   }
 }

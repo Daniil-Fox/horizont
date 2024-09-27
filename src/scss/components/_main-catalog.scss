@@ -141,6 +141,10 @@
     gap: 20px;
   }
 
+  &__item {
+    display: block;
+  }
+
 }
 
 
@@ -184,6 +188,10 @@
     &:nth-last-of-type(2) {
       @include tablet {
         order: -3;
+      }
+
+      @include mobile {
+        order: unset;
       }
     }
 
@@ -253,7 +261,7 @@
       }
     }
 
-    a {
+    span {
       flex-shrink: 0;
       width: 60px;
       height: 60px;
@@ -263,6 +271,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: .3s ease-out;
 
       @include small-tablet {
         position: absolute;
@@ -299,11 +308,16 @@
 
     @include mobile {
       margin-bottom: 16px;
+      font-size: 16px;
     }
   }
 
   &__desc {
     max-width: 330px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
 
     @include tablet {
       &:not(:last-child) {
@@ -357,6 +371,12 @@
       @include tablet {
         left: 100%;
       }
+    }
+  }
+
+  @include hover {
+    .mc-item__bottom span {
+      transform: rotate(45deg);
     }
   }
 }

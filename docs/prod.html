@@ -91,6 +91,9 @@
       </nav>
 
       <div class="header__right">
+        <a href="tel:+78124265470" class="header__tel-icon">
+          <img src="./img/tel-icon.webp" alt="" />
+        </a>
         <a href="tel:+78124265470" class="header__tel">+7 (812) 426-54-70</a>
         <button class="btn-reset header__btn btn" data-popup-btn="cons">
           Проконсультироваться
@@ -105,6 +108,30 @@
           <div class="line"></div>
         </div>
       </div>
+      <div class="menu">
+  <div class="menu__body">
+    <nav class="menu__nav nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог</a>
+        </li>
+        <li class="nav__item nav__item--prom">
+          <a href="#" class="nav__link">Акции</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Сервис и поддержка</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
     </div>
   </div>
 </header>
@@ -149,6 +176,32 @@
             <div class="swiper-slide">
               <img src="./img/products/04.webp" alt="" />
             </div>
+          </div>
+          <div class="prod-hero__arr prod-hero__arr--prev prod-prev">
+            <svg
+              width="28"
+              height="30"
+              viewBox="0 0 28 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.24985 13.7498C0.468796 14.5309 0.468796 15.7972 1.24985 16.5783L13.9778 29.3062C14.7588 30.0872 16.0251 30.0872 16.8062 29.3062C17.5872 28.5252 17.5872 27.2588 16.8062 26.4778L5.49249 15.1641L16.8062 3.85035C17.5872 3.0693 17.5872 1.80297 16.8062 1.02193C16.0251 0.240876 14.7588 0.240876 13.9778 1.02193L1.24985 13.7498ZM27.6641 13.1641H2.66406V17.1641H27.6641V13.1641Z"
+              />
+            </svg>
+          </div>
+          <div class="prod-hero__arr prod-hero__arr--next prod-next">
+            <svg
+              width="28"
+              height="30"
+              viewBox="0 0 28 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.24985 13.7498C0.468796 14.5309 0.468796 15.7972 1.24985 16.5783L13.9778 29.3062C14.7588 30.0872 16.0251 30.0872 16.8062 29.3062C17.5872 28.5252 17.5872 27.2588 16.8062 26.4778L5.49249 15.1641L16.8062 3.85035C17.5872 3.0693 17.5872 1.80297 16.8062 1.02193C16.0251 0.240876 14.7588 0.240876 13.9778 1.02193L1.24985 13.7498ZM27.6641 13.1641H2.66406V17.1641H27.6641V13.1641Z"
+              />
+            </svg>
           </div>
         </div>
         <div class="prod-hero__thumbs swiper">
@@ -335,7 +388,6 @@
               >
                 <path
                   d="M22.6777 2.00006C22.6777 0.895494 21.7822 6.29676e-05 20.6777 6.38105e-05L2.67767 6.3389e-05C1.5731 6.3389e-05 0.677669 0.895494 0.677669 2.00006C0.677669 3.10463 1.5731 4.00006 2.67767 4.00006L18.6777 4.00006L18.6777 20.0001C18.6777 21.1046 19.5731 22.0001 20.6777 22.0001C21.7822 22.0001 22.6777 21.1046 22.6777 20.0001L22.6777 2.00006ZM4.41421 21.0919L22.0919 3.41428L19.2635 0.58585L1.58579 18.2635L4.41421 21.0919Z"
-                  fill="white"
                 />
               </svg>
             </a>
@@ -375,7 +427,7 @@
             <video
               src="cover.mp4"
               poster="./img/products/01.webp"
-              data-video-video
+              data-video-src="https://www.youtube.com/embed/rYEDA3JcQqw?si=4lo0OwdGbB7uYHzW"
             ></video>
             <div class="prod-video__play" data-video-btn></div>
           </div>
@@ -407,7 +459,6 @@
               >
                 <path
                   d="M22.6777 2.00006C22.6777 0.895494 21.7822 6.29676e-05 20.6777 6.38105e-05L2.67767 6.3389e-05C1.5731 6.3389e-05 0.677669 0.895494 0.677669 2.00006C0.677669 3.10463 1.5731 4.00006 2.67767 4.00006L18.6777 4.00006L18.6777 20.0001C18.6777 21.1046 19.5731 22.0001 20.6777 22.0001C21.7822 22.0001 22.6777 21.1046 22.6777 20.0001L22.6777 2.00006ZM4.41421 21.0919L22.0919 3.41428L19.2635 0.58585L1.58579 18.2635L4.41421 21.0919Z"
-                  fill="white"
                 />
               </svg>
             </a>
@@ -479,6 +530,34 @@
 
     <div class="prod-chars__content prod-chars" data-tab-content="lic">
       <div class="prod-chars__slider lic-slider swiper">
+        <div class="lic-slider__control">
+          <div class="lic-slider__btn lic-slider__btn--prev">
+            <svg
+              width="28"
+              height="30"
+              viewBox="0 0 28 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.24985 13.7498C0.468796 14.5309 0.468796 15.7972 1.24985 16.5783L13.9778 29.3062C14.7588 30.0872 16.0251 30.0872 16.8062 29.3062C17.5872 28.5252 17.5872 27.2588 16.8062 26.4778L5.49249 15.1641L16.8062 3.85035C17.5872 3.0693 17.5872 1.80297 16.8062 1.02193C16.0251 0.240876 14.7588 0.240876 13.9778 1.02193L1.24985 13.7498ZM27.6641 13.1641H2.66406V17.1641H27.6641V13.1641Z"
+              />
+            </svg>
+          </div>
+          <div class="lic-slider__btn lic-slider__btn--next">
+            <svg
+              width="28"
+              height="30"
+              viewBox="0 0 28 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.7502 16.2502C27.5312 15.4691 27.5312 14.2028 26.7502 13.4217L14.0222 0.6938C13.2412 -0.0872487 11.9749 -0.0872487 11.1938 0.6938C10.4128 1.47485 10.4128 2.74118 11.1938 3.52223L22.5075 14.8359L11.1938 26.1496C10.4128 26.9307 10.4128 28.197 11.1938 28.9781C11.9749 29.7591 13.2412 29.7591 14.0222 28.9781L26.7502 16.2502ZM0.335938 16.8359L25.3359 16.8359V12.8359L0.335937 12.8359L0.335938 16.8359Z"
+              />
+            </svg>
+          </div>
+        </div>
         <div class="swiper-wrapper">
           <div
             class="swiper-slide"
@@ -558,12 +637,12 @@
 
       <ul class="list-reset faq__list">
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос первый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -579,12 +658,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос второй. Что вы хотели бы узнать? Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -600,12 +679,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос третий. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -621,12 +700,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос четвертый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -642,12 +721,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос пятый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -663,12 +742,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос шестой. Что вы хотели бы узнать? В чем ваш вопрос?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -924,7 +1003,7 @@
 </section>
 
         <div class="popup popup-cons">
-  <div class="popup__body">
+  <div class="popup__wrapper">
     <div class="popup__close">
       <svg
         width="30"
@@ -937,52 +1016,52 @@
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 0.709465 -0.70474 0.709465 2.43359 0)"
-          fill="#373737"
         />
         <rect
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 -0.709465 0.70474 0.709465 0.353516 27.5505)"
-          fill="#373737"
         />
       </svg>
     </div>
-    <div class="popup__content">
-      <div class="popup__subtitle title3">
-        Оставьте заявку на бесплатную консультацию по телефону
-      </div>
-
-      <div class="popup__title">Заполните форму</div>
-      <form action="#" class="form cta-form popup__form">
-        <div class="popup__row">
-          <label class="form__label cta-form__label">
-            <input
-              type="text"
-              class="cta-form__input form__input input-name"
-              placeholder="Ваше имя"
-            />
-          </label>
-          <label class="form__label cta-form__label">
-            <input
-              type="tel"
-              class="cta-form__input form__input input-tel"
-              placeholder="Телефон"
-            />
-          </label>
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__subtitle title3">
+          Оставьте заявку на бесплатную консультацию по телефону
         </div>
 
-        <button class="form__btn btn btn--orange btn-reset">Отправить</button>
-      </form>
-      <div class="cta__agree popup__agree">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="#">Политикой конфиденциальности</a>
+        <div class="popup__title">Заполните форму</div>
+        <form action="#" class="form cta-form popup__form">
+          <div class="popup__row">
+            <label class="form__label cta-form__label">
+              <input
+                type="text"
+                class="cta-form__input form__input input-name"
+                placeholder="Ваше имя"
+              />
+            </label>
+            <label class="form__label cta-form__label">
+              <input
+                type="tel"
+                class="cta-form__input form__input input-tel"
+                placeholder="Телефон"
+              />
+            </label>
+          </div>
+
+          <button class="form__btn btn btn--orange btn-reset">Отправить</button>
+        </form>
+        <div class="cta__agree popup__agree">
+          Отправляя заявку, вы соглашаетесь с
+          <a href="#">Политикой конфиденциальности</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
         <div class="popup popup-recall">
-  <div class="popup__body">
+  <div class="popup__wrapper">
     <div class="popup__close">
       <svg
         width="30"
@@ -995,48 +1074,76 @@
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 0.709465 -0.70474 0.709465 2.43359 0)"
-          fill="#373737"
         />
         <rect
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 -0.709465 0.70474 0.709465 0.353516 27.5505)"
-          fill="#373737"
         />
       </svg>
     </div>
-    <div class="popup__content">
-      <div class="popup__subtitle title3">
-        Оставьте заявку на обратный звонок
-      </div>
-
-      <div class="popup__title">Заполните форму</div>
-      <form action="#" class="form cta-form popup__form">
-        <div class="popup__row">
-          <label class="form__label cta-form__label">
-            <input
-              type="text"
-              class="cta-form__input form__input input-name"
-              placeholder="Ваше имя"
-            />
-          </label>
-          <label class="form__label cta-form__label">
-            <input
-              type="tel"
-              class="cta-form__input form__input input-tel"
-              placeholder="Телефон"
-            />
-          </label>
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__subtitle title3">
+          Оставьте заявку на обратный звонок
         </div>
 
-        <button class="form__btn btn btn--orange btn-reset">
-          Перезвоните мне
-        </button>
-      </form>
-      <div class="cta__agree popup__agree">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="#">Политикой конфиденциальности</a>
+        <div class="popup__title">Заполните форму</div>
+        <form action="#" class="form cta-form popup__form">
+          <div class="popup__row">
+            <label class="form__label cta-form__label">
+              <input
+                type="text"
+                class="cta-form__input form__input input-name"
+                placeholder="Ваше имя"
+              />
+            </label>
+            <label class="form__label cta-form__label">
+              <input
+                type="tel"
+                class="cta-form__input form__input input-tel"
+                placeholder="Телефон"
+              />
+            </label>
+          </div>
+
+          <button class="form__btn btn btn--orange btn-reset">
+            Перезвоните мне
+          </button>
+        </form>
+        <div class="cta__agree popup__agree">
+          Отправляя заявку, вы соглашаетесь с
+          <a href="#">Политикой конфиденциальности</a>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
+
+        <div class="popup popup-video">
+  <div class="popup__wrapper">
+    <div class="popup__close">
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="38.614"
+          height="3.45267"
+          transform="matrix(0.70474 0.709465 -0.70474 0.709465 2.43359 0)"
+        />
+        <rect
+          width="38.614"
+          height="3.45267"
+          transform="matrix(0.70474 -0.709465 0.70474 0.709465 0.353516 27.5505)"
+        />
+      </svg>
+    </div>
+    <div class="popup__body" data-video-src="">
+      <iframe src="" frameborder="0"></iframe>
     </div>
   </div>
 </div>
@@ -1048,17 +1155,21 @@
       <div class="cta__container">
         <div class="cta__left">
           <div class="cta__block">
-            <div class="btn cta__capture">Приезжайте</div>
+            <a href="#" class="btn cta__capture">Приезжайте</a>
             <span class="cta__inf"
               >Санкт-Петербург, Петергоф, Ропшинское шоссе, 8Д</span
             >
           </div>
           <div class="cta__block">
-            <div class="btn cta__capture">Звоните</div>
+            <a href="tel:+78124265470" class="btn cta__capture">Звоните</a>
             <a href="tel:+78124265470" class="cta__inf">+7 (812) 426-54-70</a>
           </div>
           <div class="cta__block">
-            <div class="btn cta__capture">Пишите</div>
+            <a
+              href="mailto:info@gorizont.instrument.ru"
+              class="btn cta__capture"
+              >Пишите</a
+            >
             <a href="mailto:info@gorizont.instrument.ru" class="cta__inf"
               >info@gorizont.instrument.ru</a
             >

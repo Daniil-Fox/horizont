@@ -91,6 +91,9 @@
       </nav>
 
       <div class="header__right">
+        <a href="tel:+78124265470" class="header__tel-icon">
+          <img src="./img/tel-icon.webp" alt="" />
+        </a>
         <a href="tel:+78124265470" class="header__tel">+7 (812) 426-54-70</a>
         <button class="btn-reset header__btn btn" data-popup-btn="cons">
           Проконсультироваться
@@ -105,6 +108,30 @@
           <div class="line"></div>
         </div>
       </div>
+      <div class="menu">
+  <div class="menu__body">
+    <nav class="menu__nav nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог</a>
+        </li>
+        <li class="nav__item nav__item--prom">
+          <a href="#" class="nav__link">Акции</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Сервис и поддержка</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
     </div>
   </div>
 </header>
@@ -396,23 +423,25 @@
         </div>
       </div>
 
-      <div class="main-catalog__item mc-item">
-        <div class="mc-item__title subtitle1">Бетоноукладчик за 1000 руб.</div>
-        <p class="text mc-item__desc">
+      <a href="#" class="main-catalog__item mc-item">
+        <span class="mc-item__title subtitle1"
+          >Бетоноукладчик за 1000 руб.</span
+        >
+        <span class="text mc-item__desc">
           Подберем необходимые инструменты на любой случай
-        </p>
+        </span>
 
-        <a href="#" class="mc-item__link link-arr"
+        <span class="mc-item__link link-arr"
           >Узнать подробнее
           <svg class="">
             <use xlink:href="img/sprite.svg#link-arr"></use>
           </svg>
-        </a>
+        </span>
 
         <div class="mc-item__img">
           <img src="./img/main-catalog/item.webp" alt="" />
         </div>
-      </div>
+      </a>
 
       <div class="main-catalog__item mc-item mc-item--img">
         <div class="mc-item__cover">
@@ -430,13 +459,13 @@
           </picture>
         </div>
       </div>
-      <div class="main-catalog__item mc-item mc-item--short mc-item--sb">
+      <a href="#" class="main-catalog__item mc-item mc-item--short mc-item--sb">
         <div class="title3 mc-item__title">Специальные предложения</div>
         <div class="mc-item__bottom">
           <p class="text">
             Выгодные акции на самые популярные товары популярные товары акции
           </p>
-          <a href="#">
+          <span>
             <svg
               width="23"
               height="22"
@@ -449,15 +478,15 @@
                 fill="white"
               />
             </svg>
-          </a>
+          </span>
         </div>
-      </div>
+      </a>
 
-      <div class="main-catalog__item mc-item mc-item--short mc-item--sb">
+      <a href="#" class="main-catalog__item mc-item mc-item--short mc-item--sb">
         <div class="title3 mc-item__title">О нас</div>
         <div class="mc-item__bottom">
           <p class="text">Мы всегда совершенствуем производимые инструменты</p>
-          <a href="#">
+          <span>
             <svg
               width="23"
               height="22"
@@ -470,9 +499,9 @@
                 fill="white"
               />
             </svg>
-          </a>
+          </span>
         </div>
-      </div>
+      </a>
       <a href="#" class="mc-item__cat link-arr">
         Каталог
         <svg class="">
@@ -796,12 +825,12 @@
 
       <ul class="list-reset faq__list">
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос первый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -817,12 +846,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос второй. Что вы хотели бы узнать? Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -838,12 +867,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос третий. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -859,12 +888,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос четвертый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -880,12 +909,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос пятый. Что вы хотели бы узнать?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -901,12 +930,12 @@
           </div>
         </li>
         <li class="faq__item faq-item" data-acc-container>
-          <div class="faq-item__header">
+          <div class="faq-item__header" data-acc-btn>
             <div class="faq-item__quest title5">
               Вопрос шестой. Что вы хотели бы узнать? В чем ваш вопрос?
             </div>
 
-            <button class="btn-reset faq-item__more" data-acc-btn></button>
+            <button class="btn-reset faq-item__more"></button>
           </div>
           <div class="faq-item__body" data-acc-content>
             <div class="faq-item__content">
@@ -927,7 +956,7 @@
 </section>
 
         <div class="popup popup-cons">
-  <div class="popup__body">
+  <div class="popup__wrapper">
     <div class="popup__close">
       <svg
         width="30"
@@ -940,52 +969,52 @@
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 0.709465 -0.70474 0.709465 2.43359 0)"
-          fill="#373737"
         />
         <rect
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 -0.709465 0.70474 0.709465 0.353516 27.5505)"
-          fill="#373737"
         />
       </svg>
     </div>
-    <div class="popup__content">
-      <div class="popup__subtitle title3">
-        Оставьте заявку на бесплатную консультацию по телефону
-      </div>
-
-      <div class="popup__title">Заполните форму</div>
-      <form action="#" class="form cta-form popup__form">
-        <div class="popup__row">
-          <label class="form__label cta-form__label">
-            <input
-              type="text"
-              class="cta-form__input form__input input-name"
-              placeholder="Ваше имя"
-            />
-          </label>
-          <label class="form__label cta-form__label">
-            <input
-              type="tel"
-              class="cta-form__input form__input input-tel"
-              placeholder="Телефон"
-            />
-          </label>
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__subtitle title3">
+          Оставьте заявку на бесплатную консультацию по телефону
         </div>
 
-        <button class="form__btn btn btn--orange btn-reset">Отправить</button>
-      </form>
-      <div class="cta__agree popup__agree">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="#">Политикой конфиденциальности</a>
+        <div class="popup__title">Заполните форму</div>
+        <form action="#" class="form cta-form popup__form">
+          <div class="popup__row">
+            <label class="form__label cta-form__label">
+              <input
+                type="text"
+                class="cta-form__input form__input input-name"
+                placeholder="Ваше имя"
+              />
+            </label>
+            <label class="form__label cta-form__label">
+              <input
+                type="tel"
+                class="cta-form__input form__input input-tel"
+                placeholder="Телефон"
+              />
+            </label>
+          </div>
+
+          <button class="form__btn btn btn--orange btn-reset">Отправить</button>
+        </form>
+        <div class="cta__agree popup__agree">
+          Отправляя заявку, вы соглашаетесь с
+          <a href="#">Политикой конфиденциальности</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
         <div class="popup popup-recall">
-  <div class="popup__body">
+  <div class="popup__wrapper">
     <div class="popup__close">
       <svg
         width="30"
@@ -998,47 +1027,47 @@
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 0.709465 -0.70474 0.709465 2.43359 0)"
-          fill="#373737"
         />
         <rect
           width="38.614"
           height="3.45267"
           transform="matrix(0.70474 -0.709465 0.70474 0.709465 0.353516 27.5505)"
-          fill="#373737"
         />
       </svg>
     </div>
-    <div class="popup__content">
-      <div class="popup__subtitle title3">
-        Оставьте заявку на обратный звонок
-      </div>
-
-      <div class="popup__title">Заполните форму</div>
-      <form action="#" class="form cta-form popup__form">
-        <div class="popup__row">
-          <label class="form__label cta-form__label">
-            <input
-              type="text"
-              class="cta-form__input form__input input-name"
-              placeholder="Ваше имя"
-            />
-          </label>
-          <label class="form__label cta-form__label">
-            <input
-              type="tel"
-              class="cta-form__input form__input input-tel"
-              placeholder="Телефон"
-            />
-          </label>
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__subtitle title3">
+          Оставьте заявку на обратный звонок
         </div>
 
-        <button class="form__btn btn btn--orange btn-reset">
-          Перезвоните мне
-        </button>
-      </form>
-      <div class="cta__agree popup__agree">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="#">Политикой конфиденциальности</a>
+        <div class="popup__title">Заполните форму</div>
+        <form action="#" class="form cta-form popup__form">
+          <div class="popup__row">
+            <label class="form__label cta-form__label">
+              <input
+                type="text"
+                class="cta-form__input form__input input-name"
+                placeholder="Ваше имя"
+              />
+            </label>
+            <label class="form__label cta-form__label">
+              <input
+                type="tel"
+                class="cta-form__input form__input input-tel"
+                placeholder="Телефон"
+              />
+            </label>
+          </div>
+
+          <button class="form__btn btn btn--orange btn-reset">
+            Перезвоните мне
+          </button>
+        </form>
+        <div class="cta__agree popup__agree">
+          Отправляя заявку, вы соглашаетесь с
+          <a href="#">Политикой конфиденциальности</a>
+        </div>
       </div>
     </div>
   </div>
@@ -1051,17 +1080,21 @@
       <div class="cta__container">
         <div class="cta__left">
           <div class="cta__block">
-            <div class="btn cta__capture">Приезжайте</div>
+            <a href="#" class="btn cta__capture">Приезжайте</a>
             <span class="cta__inf"
               >Санкт-Петербург, Петергоф, Ропшинское шоссе, 8Д</span
             >
           </div>
           <div class="cta__block">
-            <div class="btn cta__capture">Звоните</div>
+            <a href="tel:+78124265470" class="btn cta__capture">Звоните</a>
             <a href="tel:+78124265470" class="cta__inf">+7 (812) 426-54-70</a>
           </div>
           <div class="cta__block">
-            <div class="btn cta__capture">Пишите</div>
+            <a
+              href="mailto:info@gorizont.instrument.ru"
+              class="btn cta__capture"
+              >Пишите</a
+            >
             <a href="mailto:info@gorizont.instrument.ru" class="cta__inf"
               >info@gorizont.instrument.ru</a
             >

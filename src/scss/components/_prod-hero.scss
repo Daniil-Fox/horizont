@@ -13,6 +13,61 @@
 
   }
 
+  &__arr {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid #373737;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-out;
+    user-select: none;
+    background-color: #373737;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.swiper-button-disabled {
+      background-color: transparent;
+      pointer-events: none;
+
+      svg {
+        fill: #373737;
+      }
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+      transition: .3s ease-out;
+    }
+
+    &--prev {
+      transform: translateY(-50%);
+      left: 30px;
+    }
+
+    &--next {
+      right: 30px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    @include hover {
+      border-color: var(--accent);
+
+      svg {
+        fill: var(--accent);
+      }
+    }
+  }
+
   &__left {
     grid-column: 7 span;
 

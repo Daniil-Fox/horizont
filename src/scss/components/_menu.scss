@@ -1,0 +1,24 @@
+.menu {
+  position: absolute;
+  z-index: -1;
+  top: calc(100% - 15px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 30px 15px;
+  padding-bottom: 45px;
+  border-radius: 10px;
+  transition: .3s ease-out;
+
+  transform: translateY(-120%);
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__nav {
+    .nav__list {
+      flex-direction: column;
+    }
+  }
+}

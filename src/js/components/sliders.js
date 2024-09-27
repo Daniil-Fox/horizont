@@ -78,6 +78,10 @@ const prodSlider = new Swiper('.prod-hero__slider', {
   spaceBetween: 25,
   thumbs: {
     swiper: prodThumbs
+  },
+  navigation: {
+    prevEl: '.prod-hero__arr--prev',
+    nextEl: '.prod-hero__arr--next',
   }
 })
 
@@ -85,6 +89,10 @@ const prodSlider = new Swiper('.prod-hero__slider', {
 new Swiper('.lic-slider', {
   slidesPerView: 4,
   spaceBetween: 25,
+  navigation: {
+    prevEl: '.lic-slider__btn--prev',
+    nextEl: '.lic-slider__btn--next'
+  },
   pagination: {
     el: '.lic-pagination'
   },
